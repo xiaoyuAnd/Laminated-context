@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            box-sizing: border-box;
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+            margin: 100px auto;
+        }
+        
+        .a {
+            /* position: relative;
+            z-index: 1; */
+            opacity: .5;
+        }
+        
+        .a1 {
+            position: relative;
+            top: 20px;
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+            z-index: 10;
+        }
+        
+        .b {}
+        
+        .b1 {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="a">
+            <div class="a1">
+                A1
+            </div>
+        </div>
+        <div class="b">
+            <div class="b1">
+                B1
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
